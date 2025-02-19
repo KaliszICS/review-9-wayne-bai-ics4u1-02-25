@@ -293,7 +293,7 @@ void oddSumTest6() {
 void lettersToFiveTest5() {
     Class<?> testClass = PracticeProblem.class;
     try {
-        Class[] cArg = {String.class, String.class};
+        Class[] cArg = {String.class, char.class};
         Method method = testClass.getDeclaredMethod("lettersToFive", cArg);
   // Enter code here
     assertEquals(34, (int)method.invoke(null, "i am the best in the world you see", 'e'));
@@ -312,7 +312,7 @@ void lettersToFiveTest5() {
 void lettersToFiveTest4() {
     Class<?> testClass = PracticeProblem.class;
     try {
-        Class[] cArg = {String.class, String.class};
+        Class[] cArg = {String.class, char.class};
         Method method = testClass.getDeclaredMethod("lettersToFive", cArg);
   // Enter code here
     assertEquals(-1, (int)method.invoke(null, "", 'z'));
@@ -331,7 +331,7 @@ void lettersToFiveTest4() {
 void lettersToFiveTest3() {
     Class<?> testClass = PracticeProblem.class;
     try {
-        Class[] cArg = {String.class, String.class};
+        Class[] cArg = {String.class, char.class};
         Method method = testClass.getDeclaredMethod("lettersToFive", cArg);
   // Enter code here
     assertEquals(5, (int)method.invoke(null, "bbbbb", 'b'));
